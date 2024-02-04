@@ -1,0 +1,30 @@
+GET http://localhost:3000/movies
+
+POST http://localhost:3000/movies
+Content-Type:application/json
+
+{
+    "directorId":34,
+    "movieName": "SALAAR",
+    "leadActor": "AlluArjun"
+}
+
+GET http://localhost:3000/movies/46/
+
+
+PUT http://localhost:3000/movies/46
+Content-Type:application/json
+
+{
+    "directorId":14,
+    "movieName": "SALAAR",
+    "leadActor": "AlluArjun"
+}
+
+
+DELETE http://localhost:3000/movies/46
+
+
+GET http://localhost:3000/directors
+
+GET http://localhost:3000/directors/34/movies
